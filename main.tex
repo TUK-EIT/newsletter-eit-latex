@@ -33,31 +33,31 @@
 
 % Header info here:
 \ihead
-	{\color{tuk-grey} \pt
+	{\color{tuk-coldgrey} \pt
 		\NewsletterIssue
 	}
 % Footer info here:
 \ifoot
 	% Footer left first page
-	[\color{tuk-grey} \pt \footnotesize
+	[\color{tuk-coldgrey} \pt \footnotesize
 		\NewsletterName ~\NewsletterIssue
 	]
 	% Footer left other pages
-	{\color{tuk-grey} \pt \footnotesize
+	{\color{tuk-coldgrey} \pt \footnotesize
 		\NewsletterName ~\NewsletterIssue
 	}
 \cfoot
 	% Footer left first page
-	[\color{tuk-grey} \pt \footnotesize
+	[\color{tuk-coldgrey} \pt \footnotesize
 		\NewsletterURL
 	]
 	% Footer left other pages
-	{\color{tuk-grey} \pt \footnotesize
+	{\color{tuk-coldgrey} \pt \footnotesize
 		\NewsletterURL
 	}
 \ofoot
 	% Footer right first page
-	[\color{tuk-grey} \pt \footnotesize
+	[\color{tuk-coldgrey} \pt \footnotesize
 		\iftoggle{isGerman}{
   			Seite \thepage\ von \pageref{LastPage}
 		}{
@@ -65,7 +65,7 @@
 		}
 	]
 	% Footer right other pages
-	{\color{tuk-grey} \pt \footnotesize
+	{\color{tuk-coldgrey} \pt \footnotesize
 		\iftoggle{isGerman}{
   			Seite \thepage\ von \pageref{LastPage}
 		}{
@@ -138,7 +138,7 @@
 
 \newcommand{\JournalIssue}[1]{%
 	\begin{center}
-		\Large \ptc \color{tuk-grey}
+		\Large \ptc \color{tuk-coldgrey}
 %		\usefont{T1}{augie}{m}{n}
 		#1%
 	\end{center}	
@@ -149,6 +149,7 @@
 		
 \newcommand{\NewsItem}[1]{%
 %	\usefont{T1}{augie}{m}{n}
+	\noindent
 	\ptc
 	\color{tuk-blue}
 	\large #1 \vspace{4pt}
@@ -157,10 +158,10 @@
 		
 \newcommand{\NewsAuthor}[1]{%
 	\pt \small
-	\color{tuk-grey}
+	\color{tuk-coldgrey}
 	\hfill by \textsc{#1} \vspace{4pt}
 	\par \normalsize \normalfont \normalcolor
-}
+}		
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
