@@ -133,6 +133,9 @@
 % set standard font to PT Sans
 \renewcommand{\normalfont}{\pt}
 
+% allow easy column break with \columnbreak
+\raggedcolumns
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Specfic Newsletter Template Definitions
@@ -184,6 +187,11 @@
 	\par \normalsize \normalfont \normalcolor
 }		
 
+% use to avoid column breaks
+% see http://tex.stackexchange.com/questions/63274/how-to-prevent-column-break-in-multicols-environment
+\newenvironment{stanza}
+   {\begin{minipage}{1.1\linewidth} \begin{verse}}
+   {\end{verse} \end{minipage}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Document Start
